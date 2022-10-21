@@ -1,3 +1,9 @@
+# Cadastro Mania é um sistema onde apliquei o conhecimento adquirido de ReactJs e Nextjs, salvando os dados no firebase('Banco de dados').
+
+## Protótipo atual (Em Desenvolvimento)
+![image](https://user-images.githubusercontent.com/74872760/197284844-9cf05f8f-b8ba-4afa-86a8-291a9388ab91.png)
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
