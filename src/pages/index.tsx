@@ -14,7 +14,6 @@ export default function Home() {
     new Cliente('Lucia', 35, '4'),
   ]
 
-
   function clienteSelecionado(cliente: Cliente) {
 
   }

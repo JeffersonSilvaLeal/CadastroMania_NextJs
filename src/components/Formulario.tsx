@@ -8,7 +8,6 @@ interface FormularioProps {
     cliente: Cliente
 }
 
-
 export default function Formulario(props: FormularioProps) {
 
     const id = props.cliente?.id
