@@ -1,3 +1,4 @@
+
 interface EntradaProps {
     tipo?: 'text' | 'number'
     texto: string
