@@ -7,7 +7,6 @@ import Cliente from "../core/Cliente";
 
 export default function Home() {
 
-  
   const clientes = [
     new Cliente('Jefferson', 29, '1'),
     new Cliente('Taian', 19, '2'),

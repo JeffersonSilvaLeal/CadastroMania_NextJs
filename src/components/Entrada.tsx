@@ -7,6 +7,7 @@ interface EntradaProps {
     valorMudou?: (valor: any) => void
 
 }
+
 export default function Entrada(props: EntradaProps) {
     return (
         <div className={`flex flex-col ${props.className}`}>
