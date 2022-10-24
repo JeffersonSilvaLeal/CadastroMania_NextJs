@@ -18,6 +18,7 @@ export default function Home() {
 
   }
 
+  
   function clienteExcluido(cliente: Cliente) {
 
   }
