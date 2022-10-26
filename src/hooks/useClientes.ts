@@ -4,54 +4,56 @@ import Cliente from "../core/Cliente"
 import ClienteRepositorio from "../core/ClienteRepositorio"
 import useTabelaOuForm from "./useTabelaOuForm"
 
-export default function useClientes(){
+export default function useClientes() {
 
   const repo: ClienteRepositorio = new ColecaoCliente()
-  const {tabelaVisivel, exibirTabela, exibirFormulario} = useTabelaOuForm()
+  const { tabelaVisivel, exibirTabela, exibirFormulario } = useTabelaOuForm()
   const [cliente, setCliente] = useState<Cliente>(Cliente.vazio())
   const [clientes, setClientes] = useState<Cliente[]>([])
 
 
   useEffect(obterTodos, [])
-  
-  
+
+
   function obterTodos() {
     repo.obterTodos().then(clientes => {
       setClientes(clientes)
       exibirTabela()
-    } )
-    
+    })
+
   }
   function selecionarCliente(cliente: Cliente) {
     setCliente(cliente)
     exibirFormulario()
   }
 
- function novoCliente() {
+  function novoCliente() {
     setCliente(Cliente.vazio())
     exibirFormulario()
-  
+
   }
-  
+
   async function excluirCliente(cliente: Cliente) {
     await repo.excluir(cliente)
+    obterTodos()
     exibirTabela()
   }
 
   async function salvarCliente(cliente: Cliente) {
     await repo.salvar(cliente)
+    obterTodos()
     exibirTabela()
   }
 
   return {
-      cliente,
-      clientes,
-      tabelaVisivel,
-      novoCliente,
-      salvarCliente,
-      excluirCliente,
-      selecionarCliente,
-      obterTodos,
-      exibirTabela
-    }
+    cliente,
+    clientes,
+    tabelaVisivel,
+    novoCliente,
+    salvarCliente,
+    excluirCliente,
+    selecionarCliente,
+    obterTodos,
+    exibirTabela
+  }
 }
