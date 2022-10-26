@@ -9,10 +9,19 @@
  Cadastro Mania é um sistema onde apliquei o conhecimento adquirido de ReactJs e Nextjs, salvando os dados no firebase('Banco de dados').
 
 ## ✔️ Funcionalidades
-- (EM DESENVOLVIMENTO)
+- Salvar
+- Excluir
+- Alterar
+- ObterTodos
 
 ## ✔️ Tecnologias utilizadas
-- (EM DESENVOLVIMENTO)
+- JavaScript
+- NextJs
+- Firebase
+- Type Script
+- Tailwind
 
 ## ✔️ Acesso à documentação
-- (EM DESENVOLVIMENTO)
+- https://tailwindcss.com/
+- https://reactjs.org/docs/hooks-intro.html
+- https://nextjs.org/
