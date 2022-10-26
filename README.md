@@ -19,10 +19,12 @@ https://user-images.githubusercontent.com/74872760/198065614-e0b0b6d4-4bb6-483c-
 
 ## ✔️ Tecnologias utilizadas
 - JavaScript
-- NextJs
-- Firebase
-- Type Script
-- Tailwind
+- NextJs: 12.3.1
+- Firebase: ^9.12.1
+- Type Script: ^4.8.4
+- Tailwind: ^3.2.0
+- ReactJs: 18.2.0
+- node: 18.11.3
 
 ## ✔️ Acesso à documentação
 - https://tailwindcss.com/
